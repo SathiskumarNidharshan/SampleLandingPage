@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .navbar-nav .nav-item:hover,
+        .navbar-nav .nav-item.active {
+            background-color: #e0e0e0;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
+        .navbar-nav .nav-item:hover .nav-link,
+        .navbar-nav .nav-item.active .nav-link {
+            color: #000000 !important;
+        }
+
+        .company-name-container {
+            padding: 20px 0;
+        }
+
+        .navbar-nav .nav-item {
+            margin-left: 20px;
+        }
+
+        .custom-select {
+            width: 250px;
+        }
+
+        .company-image-container {
+            position: relative;
+        }
+
+        .company-image {
+            width: 100%;
+            height: 450px;
+        }
+
+        .textbox {
+            position: absolute;
+    bottom: 5%;
+    right: 3%;
+    height: 30%;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        }
+
+        .textbox h2 {
+            margin: 0; 
+        }
+
+        .textbox h2:first-child {
+            color: white; 
+        }
+
+        .textbox h2:last-child {
+            color: orange;
+        }
+
+
+        h1 {
+            color: orange;
+            text-align: left;
+            margin-bottom: 20px;
+            margin-left: 45px;
+        }
+
+        h2 {
+            color: orange;
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        .our_teams_border {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 15%;
+            padding-top: 10px;
+        }
+
+        p {
+            color: #555555;
+            font-size: 24px;
+            line-height: 1.0;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 150px;
+        }
+
+        .copyright-container {
+            background-color: black;
+            color: white;
+            text-align: left;
+            padding: 5px 20px;
+            font-size: 14px;
+        }
+
+        .custom-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .custom-dropdown select {
+            cursor: pointer;
+            padding: 6px;
+            border: 1px solid #ccc;
+            background-color: white;
+        }
+
+        .custom-dropdown::after {
+            content: url('/assets/images/language_switcher_arrow.png');
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        .custom-dropdown select option:checked {
+            background-color: red;
+            color: white;
+        }
+        .text-center .col-4 {
+    margin-bottom: 10px; 
+}
+.card-one,
+.card-two,
+.card-three {
+    width: 100%;
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto;
+
+    
+}
+
+.card-name {
+    margin-top: 20px; 
+    color: black;
+    font-size: 20px;
+}
+
+.text-center .col-4 p {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.0;
+    margin-top: 30px; 
+}
+footer {
+    /* background-color: #333;  */
+    color: white; 
+    padding: 0px 0; 
+   
+}
+
+footer p {
+    margin: 1%; 
+    font-size: 14px;
+}
+
+    </style>
+    <title>Nidharshan - Web Development Test</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- Company Name -->
+        <div class="row">
+            <div class="col-12 company-name-container">
+                <h1>eBeyonds</h1>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="row">
+            <nav class="col-12 navbar navbar-expand-lg navbar-light bg-secondary">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TESTIMONIALS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                    <div class="custom-dropdown">
+                        <select class="form-select form-select-sm custom-select"
+                            aria-label=".form-select-sm example">
+                            <option selected>English</option>
+                            <option value="1">French</option>
+                            <option value="2">German</option>
+                            <option value="3">Italian</option>
+                        </select>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row company-image-container">
+            <img class="company-image" src="assets/images/company1.jpg" alt="Company Image">
+            <div class="textbox">
+                <h2>WELCOME TO</h2>
+                <h2>eBeyonds</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>OUR TEAMS ARE HERE</h2>
+            </div>
+        </div>
+        <div class="row">
+            <img class="our_teams_border" src="assets/images/our_teams_border.png" alt="our_teams_border">
+        </div>
+        <div class="row">
+            <!-- Sample Paragraph -->
+            <div class="col-8 offset-2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tortor eu ex laoreet, a fermentum
+                    justo fermentum. Fusce interdum nisi quis justo laoreet dignissim. Sed venenatis odio sit amet ex
+                    vehicula, vel tempor dolor bibendum.</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-4">
+                <img class="card-one" src="assets/images/card1.png" alt="card-one">
+                <h3 class="card-name">Hugo Silva</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tortor eu ex laoreet, a fermentum
+                    justo fermentum. Fusce interdum nisi quis justo laoreet dignissim. Sed venenatis odio sit amet ex
+                    vehicula, vel tempor dolor bibendum.</p>
+            </div>
+            <div class="col-4">
+                <img class="card-two" src="assets/images/card2.png" alt="card-two">
+                <h3 class="card-name">Imanol Arias</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tortor eu ex laoreet, a fermentum
+                    justo fermentum. Fusce interdum nisi quis justo laoreet dignissim. Sed venenatis odio sit amet ex
+                    vehicula, vel tempor dolor bibendum.</p>
+            </div>
+            <div class="col-4">
+                <img class="card-three" src="assets/images/card3.png" alt="card-one">
+                <h3 class="card-name">Javier Bardem</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tortor eu ex laoreet, a fermentum
+                    justo fermentum. Fusce interdum nisi quis justo laoreet dignissim. Sed venenatis odio sit amet ex
+                    vehicula, vel tempor dolor bibendum.</p>
+            </div>
+        </div>
+
+        <!-- Copyright Container -->
+        <footer>
+            <div class="row copyright-container">
+                <div class="col-12 ">
+                    <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
+
+
+.navbar-nav .nav-item:hover,
+.navbar-nav .nav-item.active {
+    background-color: #e0e0e0;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-nav .nav-item.active .nav-link {
+    color: #000000 !important;
+}
+
+.company-name-container {
+    padding: 20px 0;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px;
+}
+
+.custom-select {
+    width: 250px;
+}
+
+.company-image-container {
+    position: relative;
+}
+
+.company-image {
+    width: 100%;
+    height: 450px;
+}
+
+.textbox {
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    height: 30%;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox h2 {
+    margin: 0; 
+}
+
+.textbox h2:first-child {
+    color: white; 
+}
+
+.textbox h2:last-child {
+    color: orange;
+}
+
+h1 {
+    color: orange;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 45px;
+}
+
+h2 {
+    color: orange;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.our_teams_border {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding-top: 10px;
+}
+
+p {
+    color: #555555;
+    font-size: 24px;
+    line-height: 1.0;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.copyright-container {
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown select {
+    cursor: pointer;
+    padding: 6px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.custom-dropdown::after {
+    content: url('/assets/images/language_switcher_arrow.png');
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.custom-dropdown select option:checked {
+    background-color: red;
+    color: white;
+}
+
+.text-center .col-4 {
+    margin-bottom: 10px; 
+}
+
+.card-one,
+.card-two,
+.card-three {
+    width: 100%;
+    max-width: 80%; /* Adjust the maximum width as needed */
+    height: auto;
+}
+
+.card-name {
+    margin-top: 20px; 
+    color: black;
+    font-size: 20px;
+}
+
+.text-center .col-4 p {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.0;
+    margin-top: 30px; 
+}
+
+footer {
+   
+    padding: 0px 0; 
+}
+
+footer p {
+    margin: 1%; 
+    font-size: 14px;
+    color:white;
+    font-weight: bold;
+    text-align: left;
+}

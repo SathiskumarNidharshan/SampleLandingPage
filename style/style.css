@@ -1,0 +1,175 @@
+.navbar-nav .nav-item:hover,
+.navbar-nav .nav-item.active {
+  background-color: #e0e0e0;
+}
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-nav .nav-item.active .nav-link {
+  color: #000000 !important;
+}
+
+.company-name-container {
+  padding: 20px 0;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 25px;
+}
+
+.custom-select {
+  width: 250px;
+}
+
+.company-image-container {
+  position: relative;
+}
+
+.company-image {
+  width: 100%;
+  height: 450px;
+}
+
+.textbox {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  height: 30%;
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/images/welcome_text_bg.png");
+  background-size: cover;
+}
+.textbox h1 {
+  margin: 0;
+}
+.textbox h1:first-child {
+  color: white;
+  font-weight: 500;
+}
+.textbox h1:last-child {
+  color: #eb9334;
+  font-weight: 500;
+}
+
+h1 {
+  color: #eb3d34;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 45px;
+}
+
+h2 {
+  color: #eb7434;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.teams-header h2 {
+  font-weight: 400;
+}
+
+.our_teams_border {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18%;
+  padding-top: 10px;
+}
+
+.text-center .col-8 p {
+  color: black;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-top: 60px;
+}
+
+p {
+  color: #555555;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.copyright-container {
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.custom-dropdown select {
+  cursor: pointer;
+  padding: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.custom-dropdown select option:checked {
+  background-color: red;
+  color: white;
+}
+.custom-dropdown::after {
+  content: url("/assets/images/language_switcher_arrow.png");
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.text-center .col-4 {
+  margin-bottom: 10px;
+}
+.text-center .card-one,
+.text-center .card-two,
+.text-center .card-three {
+  width: 100%;
+  max-width: 85%;
+  height: auto;
+}
+.text-center .card-name {
+  margin-top: 20px;
+  color: black;
+  font-size: 20px;
+}
+.text-center .text-center .col-4 p.card-description {
+  color: #555555;
+  font-size: 16px;
+  line-height: 1;
+  margin-top: 30px;
+}
+.text-center p {
+  color: #555555;
+  font-size: 18px;
+  line-height: 1;
+  margin-top: 30px;
+}
+
+footer {
+  padding: 0px 0;
+}
+footer p {
+  margin: 1%;
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 40px;
+}
